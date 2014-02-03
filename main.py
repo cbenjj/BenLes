@@ -1,7 +1,8 @@
 def main():
 	ben = "I love ";
-	lestat = "you!";
-	print ben + lestat;
+	lestat = "you,";
+	lestatsNickname = "ya ba'ara!"
+	print ben + lestat + lestatsNickname;
 
 
 if __name__ == "__main__":
