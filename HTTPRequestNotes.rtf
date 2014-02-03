@@ -1,0 +1,73 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 Avenir-Book;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red102\green177\blue50;}
+\margl1440\margr1440\vieww20740\viewh16520\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs44 \cf0 \
+
+\b Request
+\b0\fs40 \
+URL (endpoint): \ul http://www.spotter.in/
+\b issue/create
+\b0 \ulnone \
+HTTP Method: GET and POST\
+Request Body/Parameters: \{issue-name: \'93pothole\'94, issue-location: NJ, \'85\} \
+Request Headers: \'93Content-Size: 450\'94, \'93Authorization: indiarocks3\'94
+\fs44 \
+\
+
+\b Response
+\b0 \
+
+\fs40 Status Code: 200 = OK! 404 = WTF Are you Talking about (Resource Not Found) 403 (Not Authorized) \
+Response Body: \{issue-uuid: 59-AB-3430\}\
+
+\fs30 Response Headers:
+\fs34  
+\fs44 \
+\
+\
+
+\b THE MINIMAL HTTP REQUEST
+\b0 \
+
+\fs42 http://www.google.com/\
+GET\
+Body = nil\
+Headers = nil\
+
+\fs44 \
+\cf2 \
+
+\f1\fs30 // Because why not?\
+// If you don\'92t do this, your request will have no body on its way out.\cf0 \
+urlConnection.setDoOutput(true);\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf2 // How we set the headers:\cf0 \
+urlConnection.setRequestProperty(\'93Authorization\'94, \'93coolindia123\'94)\
+\
+\cf2 // How we set the request method:\cf0 \
+urlConnection.setRequestMethod(\'93POST\'94)\
+\
+\cf2 // How we set the body:\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 OutputStream bodyRequestStream = urlConnection.getOutputStream();\
+\cf2 // TODO: Construct myParameterDictionary \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 bodyRequestStream.write(myParameterDictionary)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\'96\'96\'96\'96\'96\'96\'96\'96\'96\
+\cf2 \
+// How we read the response code\cf0 \
+urlConnection.getResponseCode()\
+\
+\cf2 // How we read the response body\cf0 \
+InputStream bodyResponseStream = urlConnection.getInputStream();\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 bodyResponseStream.read()\
+
+\f0\fs44 \
+}
