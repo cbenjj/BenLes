@@ -1,3 +1,8 @@
-print "Hello world";
-print "It's been a long time";
-print "Yo I'm cooler than you.";
+def main():
+	ben = "I love ";
+	lestat = "you!";
+	print ben + lestat;
+
+
+if __name__ == "__main__":
+	main();
