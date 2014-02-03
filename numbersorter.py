@@ -10,7 +10,7 @@ def main(argv):
 
 	if (inputNumber % 2 == 0):
 		sys.exit("the number you entered is even.")
-	if (inputNumber % 2 == 1):
+	else:
 		sys.exit("the number you entered is odd.")
 
 if __name__ == "__main__":
