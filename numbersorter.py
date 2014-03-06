@@ -1,3 +1,5 @@
+# just a testing program to check if a number is prime
+
 import sys
 import math
 
