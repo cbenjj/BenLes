@@ -1,6 +1,6 @@
 def main():
-	ben = "I love ";
-	lestat = "you,";
+	ben = "Bhe";
+	lestat = "bak,";
 	lestatsNickname = "ya ba'ara!"
 	print ben + lestat + lestatsNickname;
 

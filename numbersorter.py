@@ -1,9 +1,10 @@
 import sys
+import math
 
 def isPrime(number):
 	if number > 1:
-		halfNumber = number / 2
-		for i in range(2, halfNumber + 1):
+		squareRootOfNumber = int(math.sqrt(number))
+		for i in range(2, squareRootOfNumber):
 			if number % i == 0:
 				return False
 		return True
