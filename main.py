@@ -1,9 +1,10 @@
 def main():
 	ben = "Bhe";
 	lestat = "bak,";
-	lestatsNickname = "ya ba'ara!"
-	print ben + lestat + lestatsNickname;
-
+	termOfAddress = "ya ";
+	lestatsNickname = "ba'ara!"
+	print ben + lestat + termOfAddress + lestatsNickname;
+	
 
 if __name__ == "__main__":
 	main();
